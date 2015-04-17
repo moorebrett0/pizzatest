@@ -1,4 +1,4 @@
-Assessment 5: Triangles for Epicodus by Brett Moore
+Assessment 5: Pizza for Epicodus by Brett Moore
 
 Date: April 17th, 2015
 
