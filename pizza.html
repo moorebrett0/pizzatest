@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+   <head>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Brettino's Pizzaria</title>
-  </head>
-  <body>
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <title>Brettino's Pizzaria</title>
+   </head>
+   <body>
       <h1>Brett's Pizza</h1>
-  <h3>select toppings!</h3>
-      <form id ="ticket">
-      <select id="pizza_topping">
-          <option value=0>Cheese</option>
-          <option value=1>Pepperoni</option>
-          <option value=2>Hawaiian</option>
-          <option value=3>Bacon</option>
-      </select>
-      <button type = "submit" class="btn btn-primary">Submit</button>
-  </body>
-  </html>
+      <h3>select topping!</h3>
+      <form id ="price">
+         <select id="pizza_topping">
+            <option value=0>Cheese</option>
+            <option value=1>Pepperoni</option>
+            <option value=2>Hawaiian</option>
+            <option value=3>Bacon</option>
+         </select>
+         <button type = "submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="result">
+         <h3></h3>
+      </div>
+   </body>
+</html>

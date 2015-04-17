@@ -5,17 +5,19 @@ var Pizza = {
 };
 
 $(document).ready(function() {
-    $("form#pizza").submit(function(event) {
+    $("form#price").submit(function(event) {
         event.preventDefault();
 
         var slice = parseInt($('#pizza_topping').val());
+        console.log(slice);
 
         var newPizza = Object.create(Pizza);
 
-        newPizza.person_age = slice;
+        newPizza.pizza_topping = slice;
 
         var pizzaPrice = newPizza.priceCalc();
+        console.log(pizzaPrice);
 
-        $(".result h3").text(pizzaPrice);
+        $(".result h3").text("Your pizza will cost " + pizzaPrice + " dollars");
     });
 });
