@@ -16,5 +16,10 @@ describe("Pizza", function() {
             testPizza.pizza_topping = 2;
             expect(testPizza.priceCalc()).to.equal(7);
         });
+        it("will return the slice price of bacon topping", function() {
+            var testPizza = Object.create(Pizza);
+            testPizza.pizza_topping = 3;
+            expect(testPizza.priceCalc()).to.equal(8);
+        });
     });
 });
