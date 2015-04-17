@@ -3,7 +3,7 @@ describe("Pizza", function() {
         it("returns the slice price of cheese slice", function() {
             var testSlice = Object.create(Pizza);
             testSlice.topping = "cheese";
-            expect(testTicket.priceCalcAge()).to.eql(5);
+            expect(testSlice.priceCalc()).to.eql(5);
         });
     });
 });
