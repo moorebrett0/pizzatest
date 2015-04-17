@@ -1,0 +1,12 @@
+#result {
+    display: none;
+}
+
+.jumbotron {
+    text-align: center;
+    background-image: url('http://www.mangiababypa.com/images/pizza5.jpg');
+    background-position: 100%;
+}
+.center {
+    align: center;
+}
