@@ -1,14 +1,15 @@
 describe("Pizza", function() {
     describe("priceCalc()", function() {
-        it("returns the slice price of cheese slice", function() {
-            var testSlice = Object.create(Pizza);
-            testSlice.topping = "cheese";
-            expect(testSlice.priceCalc()).to.eql(5);
+        it("will return the slice price of just cheese toppings", function() {
+            var testPizza = Object.create(Pizza);
+            testPizza.pizza_topping = 0;
+            expect(testPizza.priceCalc()).to.equal(5);
         });
-        it("returns the slice price of pepperoni slice", function() {
-            var testSlice = Object.create(Pizza);
-            testSlice.topping = "pepperoni";
-            expect(testSlice.priceCalc()).to.eql(6);
+
+        it("will return the slice price of pepperoni topping", function() {
+            var testPizza = Object.create(Pizza);
+            testPizza.pizza_topping = 1;
+            expect(testPizza.priceCalc()).to.equal(6);
         });
     });
 });
